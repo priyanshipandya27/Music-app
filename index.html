@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Music Player!</title>
+  </head>
+<body>
+		<div class="music-container">
+	
+			<div class="music-body">
+				<div class="layer">
+					<div class="volume-slider">
+					<span class="bar"></span>
+					<input type='range' min='0.01' max='1' value='1' step='0.01' class="volumerange"/>
+					</div>
+				</div>
+				<div class="top-icons">
+					<button class="volume btn" id="volume">
+						<i id="volumeicon" class="fas fa-volume-up"></i>
+					</button>
+					<button class="list btn" id="list">
+						<i class="fas fa-list"></i>
+					</button>
+				</div>
+				<div class="music-img">
+					<img src="./assets/calm-down.png" alt="song-images" id="img">
+				</div>
+				<div class="music-info">
+					<h2 id="title">calm down </h2>
+				</div>
+				<audio src="./assets/calm-down.mp3" id="audio"></audio>
+				<div class="music-progress">
+					<div class="progress-bar">
+						<span class="progress-line"></span>
+						<input type='range' min='0' max='100' value='0' class="progress" id="progress"/>
+					</div>
+					<div class="duration">
+						<span class="current-time">00:00</span>
+						<span class="duration-time">00:00</span>
+					</div>
+				</div>
+				<div class="music-controls">
+					<button class="repeat btn" id="repeat">
+						<i class="fas fa-redo-alt"></i>
+					</button>
+					<div class="main-controls">
+						<button class="prevbtn" id="prevbtn">
+							<i class="fas fa-backward"></i>
+						</button>
+						<button class="playpause" id="playpause">
+							<i id="playpause-btn"class="fas fa-play"></i>
+						</button>
+						<button class="nextbtn" id="nextbtn">
+							<i class="fas fa-forward"></i>
+						</button>
+					</div>
+					<button class="like btn" id="like">
+						<i id="likeicon" class="far fa-heart"></i>
+					</button>
+				</div>
+				<div class="songs-list" id="songs-list">
+					<button class="list-close btn" id="listclose">
+						<i class="fas fa-times"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js"></script>
+	  <script src="./script.js"></script>
+</body>
+</html>
